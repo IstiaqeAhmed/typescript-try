@@ -20,7 +20,7 @@ function doubleItAndConsole(num: number): void {
 const output = doubleItAndConsole(10);
 console.log('output', output);
 
-
+// functional typescript
 function fullName(firstName: string, lastName: string): string {
     return firstName + ' ' + lastName;
 }
@@ -29,7 +29,7 @@ const user: string = fullName('Ben', 'Ahmed');
 
 
 
-
+// arrow function typescript
 
 let multiply2: (x: number, y: number) => number;
 
