@@ -15,9 +15,13 @@ function doubleItAndConsole(num) {
 }
 const output = doubleItAndConsole(10);
 console.log('output', output);
+// functional typescript
 function fullName(firstName, lastName) {
     return firstName + ' ' + lastName;
 }
 const user = fullName('Ben', 'Ahmed');
+// arrow function typescript
+let multiply2;
+multiply2 = (x, y) => x * y;
 const multiply = (x, y) => x * y;
 console.log(multiply(235, 6));
