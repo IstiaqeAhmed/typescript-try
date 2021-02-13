@@ -93,7 +93,7 @@ const messy: Player = {
     isPlaying: true
 }
 
-const rolando: player = {
+const rolando: Player = {
     name: 'Rolando',
     club: 'Liverpool',
     salary: 6575757577,
@@ -109,3 +109,26 @@ function getBonus(player: Player, friend: string[]) {
 const poorPlayer = { age: 50, salary: 1000000 }
 
 getBonus(messy, ['ricardo', 'timaru'])
+
+
+
+
+class Person {
+    name: string;
+    private _partner: string;
+    readonly fatherName: string;
+    constructor(name: string, father: string) {
+        this.name = name;
+        this._partner = name;
+        this.fatherName = father;
+    }
+    getName(): String {
+        return this.name;
+        return this.name + '' + this._partner;
+    }
+}
+
+const sam = new Person('Sammy', 'David')
+console.log('name', sam.name, sam.fatherName);
+const samName: string = sam.getName();
+sam.name = 'john';
