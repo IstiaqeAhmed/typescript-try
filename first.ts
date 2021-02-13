@@ -62,11 +62,9 @@ console.log('friend with the largest name', megaName);
 let player: {
     club: string,
     salary: number
-}
-// object value
-player = {
+} = {
     club: 'Real Madrid',
-    salary: 34354345;
+    salary: 34354345,
 }
 
 
