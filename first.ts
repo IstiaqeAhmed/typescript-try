@@ -74,3 +74,38 @@ const friend: { name: string, age: number } = {
 }
 
 friend.age = 67;
+
+// structure
+interface Player {
+    club: string,
+    name: string,
+    salary: number,
+    wife?: string,
+    isPlaying: boolean,
+}
+
+
+const messy: Player = {
+    name: 'Messy',
+    club: 'Real Madrid',
+    salary: 4500000000,
+    wife: 'some name',
+    isPlaying: true
+}
+
+const rolando: player = {
+    name: 'Rolando',
+    club: 'Liverpool',
+    salary: 6575757577,
+    wife: 'some name',
+    isPlaying: true
+}
+
+
+
+function getBonus(player: Player, friend: string[]) {
+    return player.salary * 0.1;
+}
+const poorPlayer = { age: 50, salary: 1000000 }
+
+getBonus(messy, ['ricardo', 'timaru'])
